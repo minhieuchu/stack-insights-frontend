@@ -3,8 +3,8 @@ import {
   SearchBoxContainer,
   SearchIconStyled,
   SearchInput,
-} from "./index.styles";
-import LogoSvg from "./logo.svg";
+} from "@/components/SearchBox/index.styles";
+import LogoSvg from "@/components/SearchBox/logo.svg";
 
 export function SearchBox() {
   return (

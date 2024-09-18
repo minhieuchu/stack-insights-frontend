@@ -1,5 +1,5 @@
-import { TopBarContainer } from "./index.styles";
-import { SearchInput } from "./SearchInput";
+import { TopBarContainer } from "@/components/TopBar/index.styles";
+import { SearchInput } from "@/components/TopBar/SearchInput";
 
 export function TopBar() {
   return (

@@ -1,5 +1,5 @@
-import { SearchBox } from "./components/SearchBox";
-import { TopBar } from "./components/TopBar";
+import { SearchBox } from "@/components/SearchBox";
+import { TopBar } from "@/components/TopBar";
 
 function App() {
   return (
