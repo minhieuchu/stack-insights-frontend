@@ -1,10 +1,12 @@
+import { SearchBox } from "./components/SearchBox";
 import { TopBar } from "./components/TopBar";
 
 function App() {
   return (
-    <div>
+    <>
       <TopBar />
-    </div>
+      <SearchBox />
+    </>
   );
 }
 

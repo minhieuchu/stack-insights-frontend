@@ -18,12 +18,24 @@ export const TopBarContainer = styled("div")(({ theme }) => ({
 }));
 
 export const SearchContainer = styled("input")(({ theme }) => ({
-  width: "25rem",
-  height: "2.25rem",
-  fontSize: "1rem",
+  width: "50%",
+  height: "2rem",
+  maxWidth: "40rem",
+  minWidth: "23rem",
+  fontSize: "0.875rem",
   padding: "0 0.75rem",
-  color: theme.palette.grey[700],
-  border: `1px solid ${theme.palette.divider}`,
+  color: theme.palette.grey[600],
+  border: `1px solid ${theme.palette.grey[400]}`,
   borderRadius: "0.25rem",
   backgroundColor: theme.palette.common.white,
-}))
+  transition: "0.2s",
+
+  "&:focus-visible": {
+    outline: "none",
+    boxShadow: `0 0 ${theme.spacing(1)} skyblue`,
+  },
+
+  "&:hover": {
+    boxShadow: `0 0 ${theme.spacing(1)} skyblue`,
+  },
+}));

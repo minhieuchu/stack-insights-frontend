@@ -1,5 +1,5 @@
 import { TopBarContainer } from "./index.styles";
-import { Search } from "./Search";
+import { SearchInput } from "./SearchInput";
 
 export function TopBar() {
   return (
@@ -7,10 +7,10 @@ export function TopBar() {
       <img
         alt="Stackoverflow"
         src="/stackoverflow.png"
-        width={45}
+        width={40}
         style={{ borderRadius: "50%" }}
       />
-      <Search />
+      <SearchInput />
     </TopBarContainer>
   );
 }
