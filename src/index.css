@@ -16,6 +16,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (prefers-color-scheme: dark) {
+  #root {
+    background: #2b2b2bf7;
+    color: whitesmoke;
+  }
+}
+
 a {
   font-weight: 500;
   color: #646cff;
