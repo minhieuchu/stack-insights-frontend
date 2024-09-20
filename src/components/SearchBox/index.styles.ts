@@ -24,10 +24,10 @@ export const SearchInput = styled("input")(({ theme }) => ({
   padding: "0 2.5rem",
   paddingRight: "1.25rem",
   fontSize: "1rem",
-  color: theme.palette.grey[600],
+  color: theme.palette.text.primary,
   border: `1px solid ${theme.palette.grey[500]}`,
   borderRadius: "1.5rem",
-  backgroundColor: theme.palette.common.white,
+  backgroundColor: theme.palette.background.paper,
   boxSizing: "border-box",
   transition: "0.2s",
 

@@ -10,6 +10,7 @@ export const FooterContainer = styled("div")(({ theme }) => ({
   alignItems: "center",
   justifyContent: "space-between",
   fontSize: "0.875rem",
+  fontWeight: 500,
   padding: "0 1.5rem",
   color: theme.palette.text.primary,
   backgroundColor: theme.palette.background.paper,

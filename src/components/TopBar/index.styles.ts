@@ -10,11 +10,14 @@ export const TopBarContainer = styled("div")(({ theme }) => ({
   position: "fixed",
   top: 0,
   left: 0,
-  color: "#000000",
   borderTop: "3px solid",
   borderBottom: "1px solid",
-  borderTopColor: theme.palette.secondary.light,
+  borderTopColor:
+    theme.palette.mode === "light"
+      ? theme.palette.secondary.light
+      : theme.palette.secondary.dark,
   borderBottomColor: theme.palette.divider,
+  backgroundColor: theme.palette.background.paper,
 }));
 
 export const SearchContainer = styled("input")(({ theme }) => ({
@@ -24,10 +27,10 @@ export const SearchContainer = styled("input")(({ theme }) => ({
   minWidth: "23rem",
   fontSize: "0.875rem",
   padding: "0 0.75rem",
-  color: theme.palette.grey[600],
-  border: `1px solid ${theme.palette.grey[400]}`,
+  color: theme.palette.text.primary,
+  border: `1px solid ${theme.palette.divider}`,
   borderRadius: "0.25rem",
-  backgroundColor: theme.palette.common.white,
+  backgroundColor: theme.palette.background.paper,
   transition: "0.2s",
 
   "&:focus-visible": {

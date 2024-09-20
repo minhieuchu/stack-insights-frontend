@@ -2,9 +2,10 @@ import { ThemeMode } from "@/providers/ThemeProvider/types";
 import { createTheme, PaletteOptions } from "@mui/material";
 
 const lightModePalette: PaletteOptions = {
+  mode: "light",
   background: {
     default: "#fafafa",
-    paper: "#e0e0e0",
+    paper: "#fff",
   },
   text: {
     primary: "#424242",
@@ -12,6 +13,7 @@ const lightModePalette: PaletteOptions = {
 };
 
 const darkModePalette: PaletteOptions = {
+  mode: "dark",
   background: {
     default: "#212121",
     paper: "#212121",
@@ -19,6 +21,7 @@ const darkModePalette: PaletteOptions = {
   text: {
     primary: "#eeeeee",
   },
+  divider: "#616161",
 };
 
 export const themeFactory = (mode: ThemeMode) => {
