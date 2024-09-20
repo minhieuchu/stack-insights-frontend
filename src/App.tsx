@@ -1,5 +1,5 @@
 import { Footer } from "@/components/Footer";
-import { SearchBox } from "@/components/SearchBox";
+import { LeftBar } from "@/components/LeftBar";
 import { TopBar } from "@/components/TopBar";
 import ThemeProvider from "@/providers/ThemeProvider";
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <ThemeProvider>
       <TopBar />
-      <SearchBox />
+      <LeftBar />
       <Footer />
     </ThemeProvider>
   );
