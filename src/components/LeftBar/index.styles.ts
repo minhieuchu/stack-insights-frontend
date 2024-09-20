@@ -4,10 +4,14 @@ export const LeftBarContainer = styled("div")(({ theme }) => ({
   position: "fixed",
   top: "3.75rem",
   left: 0,
-  width: "32rem",
+  width: "28vw",
   minHeight: "calc(100vh - 3.75rem)",
   backgroundColor: theme.palette.background.default,
   transition: "0.2s",
+
+  "@media screen and (max-width: 768px)": {
+    display: "none",
+  },
 }));
 
 export const ContentContainer = styled("div")({
@@ -41,6 +45,9 @@ export const ItemContainer = styled("div")(({ theme }) => ({
 
   "&:hover": {
     cursor: "pointer",
-    backgroundColor: theme.palette.grey[700],
+    backgroundColor:
+      theme.palette.mode === "light"
+        ? theme.palette.grey[100]
+        : theme.palette.grey[700],
   },
 }));
