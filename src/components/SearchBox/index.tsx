@@ -1,6 +1,7 @@
 import {
   LogoImage,
   SearchBoxContainer,
+  SearchButton,
   SearchIconStyled,
   SearchInput,
 } from "@/components/SearchBox/index.styles";
@@ -12,6 +13,7 @@ export function SearchBox() {
       <LogoImage alt="Logo" src={LogoSvg} />
       <SearchIconStyled />
       <SearchInput name="main-search-input" />
+      <SearchButton>{"Let's search"}</SearchButton>
     </SearchBoxContainer>
   );
 }

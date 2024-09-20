@@ -54,3 +54,26 @@ export const LogoImage = styled("img")({
   top: "-7.25rem",
   left: "1.35rem",
 });
+
+export const SearchButton = styled("div")(({ theme }) => ({
+  position: "relative",
+  left: "50%",
+  width: "6.75rem",
+  height: "2.25rem",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  fontSize: "0.875rem",
+  fontWeight: 500,
+  color: theme.palette.text.primary,
+  transform: "translate(-50%, 1rem)",
+  backgroundColor: theme.palette.background.paper,
+  borderRadius: "0.5rem",
+  boxSizing: "border-box",
+  opacity: 0.9,
+  cursor: "pointer",
+
+  "&:hover": {
+    border: `1px solid ${theme.palette.grey[700]}`,
+  },
+}));
