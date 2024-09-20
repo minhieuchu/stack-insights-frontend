@@ -28,3 +28,22 @@ export const HeaderContainer = styled("div")({
     marginTop: 0,
   },
 });
+
+export const ButtonGroupContainer = styled("div")(({ theme }) => ({
+  display: "flex",
+  alignItems: "center",
+  width: "fit-content",
+  padding: "0.25rem",
+  fontSize: "0.875rem",
+  border: `1px solid ${theme.palette.divider}`,
+  borderRadius: "0.5rem",
+  "& > div": {
+    padding: "0.25rem 0.75rem",
+    borderRadius: "0.5rem",
+    transition: "background-color 0.2s",
+    "&:hover": {
+      cursor: "pointer",
+      backgroundColor: theme.palette.divider,
+    },
+  },
+}));
