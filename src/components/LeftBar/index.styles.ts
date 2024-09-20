@@ -5,10 +5,9 @@ export const LeftBarContainer = styled("div")(({ theme }) => ({
   top: "3.75rem",
   left: 0,
   width: "32rem",
-  height: "calc(100vh - 6.25rem)",
-  borderRight: "1px solid",
-  borderRightColor: theme.palette.divider,
+  minHeight: "calc(100vh - 3.75rem)",
   backgroundColor: theme.palette.background.default,
+  transition: "0.2s",
 }));
 
 export const ContentContainer = styled("div")({
@@ -18,11 +17,13 @@ export const ContentContainer = styled("div")({
   width: "10rem",
 });
 
-export const SectionContainer = styled("div")({
+export const SectionContainer = styled("div")(({ theme }) => ({
+  color: theme.palette.text.primary,
   h5: {
     margin: "0.75rem 0",
+    transition: "0.2s",
   },
-});
+}));
 
 export const ItemContainer = styled("div")(({ theme }) => ({
   position: "relative",

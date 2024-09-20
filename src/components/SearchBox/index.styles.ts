@@ -72,6 +72,7 @@ export const SearchButton = styled("div")(({ theme }) => ({
   boxSizing: "border-box",
   opacity: 0.9,
   cursor: "pointer",
+  transition: "0.2s",
 
   "&:hover": {
     border: `1px solid ${theme.palette.grey[700]}`,

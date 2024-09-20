@@ -21,7 +21,7 @@ function SectionItem({ name }: SectionItemProps) {
 
 export function LeftBar() {
   return (
-    <LeftBarContainer>
+    <LeftBarContainer className="foo-bar">
       <ContentContainer>
         <SectionContainer>
           <h5>{"RECENT TAGS"}</h5>

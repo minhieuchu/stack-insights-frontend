@@ -4,7 +4,7 @@ import { createTheme, PaletteOptions } from "@mui/material";
 const lightModePalette: PaletteOptions = {
   mode: "light",
   background: {
-    default: "#fafafa",
+    default: "#fff",
     paper: "#fff",
   },
   text: {

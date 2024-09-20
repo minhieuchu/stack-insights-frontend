@@ -1,5 +1,6 @@
 import { TopBarContainer } from "@/components/TopBar/index.styles";
 import { SearchInput } from "@/components/TopBar/SearchInput";
+import { ThemeSwitch } from "@/components/TopBar/ThemeSwitch";
 
 export function TopBar() {
   return (
@@ -11,6 +12,7 @@ export function TopBar() {
         style={{ borderRadius: "50%" }}
       />
       <SearchInput />
+      <ThemeSwitch />
     </TopBarContainer>
   );
 }

@@ -16,6 +16,7 @@ export const FooterContainer = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
   boxSizing: "border-box",
   borderTop: `1px solid ${theme.palette.divider}`,
+  transition: "0.2s",
 
   "& > div": {
     "&:hover": {
