@@ -99,4 +99,10 @@ export const MaterialUISwitch = styled(Switch)(({ theme }) => ({
       backgroundColor: "#8796A5",
     }),
   },
+
+  "@media screen and (max-width: 768px)": {
+    "&": {
+      display: "none",
+    },
+  },
 }));
