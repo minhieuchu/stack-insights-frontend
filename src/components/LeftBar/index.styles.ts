@@ -2,10 +2,10 @@ import { styled } from "@mui/material/styles";
 
 export const LeftBarContainer = styled("div")(({ theme }) => ({
   position: "fixed",
-  top: "3.75rem",
+  top: "3.5rem",
   left: 0,
   width: "28vw",
-  minHeight: "calc(100vh - 3.75rem)",
+  minHeight: "calc(100vh - 3.5rem)",
   backgroundColor: theme.palette.background.default,
   transition: "0.2s",
 
@@ -24,6 +24,7 @@ export const ContentContainer = styled("div")({
 export const SectionContainer = styled("div")(({ theme }) => ({
   color: theme.palette.text.primary,
   h5: {
+    fontSize: "0.75rem",
     margin: "0.75rem 0",
     transition: "0.2s",
   },
@@ -33,7 +34,7 @@ export const ItemContainer = styled("div")(({ theme }) => ({
   position: "relative",
   left: "-0.5rem",
   width: "10rem",
-  fontSize: "0.95rem",
+  fontSize: "0.9rem",
   display: "flex",
   alignItems: "center",
   gap: "0.75rem",

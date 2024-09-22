@@ -7,7 +7,7 @@ export const TopBarContainer = styled("div")(({ theme }) => ({
   justifyContent: "center",
   gap: "1rem",
   width: "100vw",
-  height: "3.5rem",
+  height: "3.25rem",
   position: "fixed",
   top: 0,
   left: 0,

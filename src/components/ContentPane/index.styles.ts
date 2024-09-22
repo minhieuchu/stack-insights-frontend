@@ -2,16 +2,17 @@ import { styled } from "@mui/material/styles";
 
 export const PaneContainer = styled("div")(({ theme }) => ({
   position: "fixed",
-  top: "3.75rem",
+  top: "3.5rem",
   left: "28vw",
-  padding: "2rem",
   color: theme.palette.text.primary,
   width: "calc(100vw - 28vw)",
-  minHeight: "calc(100vh - 3.75rem)",
+  minHeight: "calc(100vh - 3.5rem)",
   borderLeft: `1px solid ${theme.palette.divider}`,
   backgroundColor: theme.palette.background.default,
   boxSizing: "border-box",
+  overflowY: "scroll",
   transition: "0.2s",
+  scrollbarWidth: "thin",
 
   "@media screen and (max-width: 768px)": {
     left: 0,
@@ -20,14 +21,22 @@ export const PaneContainer = styled("div")(({ theme }) => ({
   },
 }));
 
-export const HeaderContainer = styled("div")({
-  maxWidth: "64rem",
+export const HeaderContainer = styled("div")(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  maxWidth: "62rem",
   width: "100%",
+  height: "11.5rem",
+  padding: "2rem",
+  paddingBottom: "1.25rem",
+  boxSizing: "border-box",
+  borderBottom: `1px solid ${theme.palette.divider}`,
 
   h2: {
     marginTop: 0,
   },
-});
+}));
 
 export const ButtonGroupContainer = styled("div")(({ theme }) => ({
   display: "flex",

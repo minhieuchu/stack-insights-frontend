@@ -10,7 +10,7 @@ interface SectionItemProps {
   name: string;
 }
 
-function SectionItem({ name }: SectionItemProps) {
+function SectionItem({ name }: Readonly<SectionItemProps>) {
   return (
     <ItemContainer>
       <SellIcon sx={{ fontSize: "1.15rem" }} />

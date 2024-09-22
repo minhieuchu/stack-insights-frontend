@@ -3,15 +3,11 @@ export interface Post {
   post_type_id: string;
   creation_date: string;
   score: string;
-  view_count: string | null;
   body: string;
   owner_user_id: string;
   owner_display_name: string | null;
   last_edit_date: string;
   last_activity_date: string;
-  title: string | null;
-  tags: string | null;
-  answer_count: string | null;
 }
 
 export interface Question extends Post {
@@ -21,9 +17,5 @@ export interface Question extends Post {
   answer_count: string;
 }
 
-export interface Answer extends Post {
-  view_count: null;
-  tags: null;
-  title: null;
-  answer_count: null;
-}
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
+export interface Answer extends Post {}

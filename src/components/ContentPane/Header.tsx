@@ -1,15 +1,24 @@
 import { ButtonGroup } from "@/components/ContentPane/ButtonGroup";
 import { HeaderContainer } from "@/components/ContentPane/index.styles";
+import { selectQuestions, useStackInsightsStore } from "@/stores";
 
 export function Header() {
+  const questions = useStackInsightsStore(selectQuestions);
   return (
     <HeaderContainer>
-      <h2>
-        {
-          "Getting error: Peer authentication failed for user postgres, when trying to get pgsql working with rails"
-        }
-      </h2>
-      <ButtonGroup items={["Newest", "Active", "Unanswered"]} />
+      <h2>{"Search Results"}</h2>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        <div
+          style={{ fontWeight: 700, fontSize: "0.875rem" }}
+        >{`${questions.length} results`}</div>
+        <ButtonGroup items={["Newest", "Active", "Unanswered"]} />
+      </div>
     </HeaderContainer>
   );
 }

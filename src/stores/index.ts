@@ -1,14 +1,14 @@
 import { create } from "zustand";
 import { immer } from "zustand/middleware/immer";
 
-import { Post } from "@/interfaces/Post";
+import { Question } from "@/interfaces/Post";
 
 type StackInsightsState = {
-  posts: Post[];
+  questions: Question[];
 };
 
 type StackInsightsActions = {
-  setPosts: (posts: Post[]) => void;
+  setQuestions: (questions: Question[]) => void;
 };
 
 type StackInsightsStoreType = StackInsightsState & StackInsightsActions;
@@ -16,17 +16,17 @@ type StackInsightsStoreType = StackInsightsState & StackInsightsActions;
 export const useStackInsightsStore = create<StackInsightsStoreType>()(
   immer((set) => ({
     // State
-    posts: [],
+    questions: [],
 
     // Actions
-    setPosts: (posts: Post[]) =>
+    setQuestions: (questions: Question[]) =>
       set((state) => {
-        state.posts = posts;
+        state.questions = questions;
       }),
   })),
 );
 
-export const selectPosts = (state: StackInsightsStoreType): Post[] =>
-  state.posts;
+export const selectQuestions = (state: StackInsightsStoreType): Question[] =>
+  state.questions;
 
-export const { setPosts } = useStackInsightsStore.getState();
+export const { setQuestions } = useStackInsightsStore.getState();
