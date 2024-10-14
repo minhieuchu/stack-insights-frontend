@@ -1,3 +1,5 @@
+import { User } from '@/interfaces/User';
+
 export interface Post {
   id: string;
   post_type_id: string;
@@ -5,7 +7,7 @@ export interface Post {
   score: string;
   body: string;
   owner_user_id: string;
-  owner_display_name: string | null;
+  owner_user?: User;
   last_edit_date: string;
   last_activity_date: string;
 }

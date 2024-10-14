@@ -62,3 +62,18 @@ export const TagItem = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.divider,
   cursor: "pointer",
 }));
+
+export const UserInfo = styled("div")({
+  display: "flex",
+  alignItems: "center",
+  gap: "0.25rem",
+
+  "a:first-of-type": {
+    textDecoration: "none",
+  },
+
+  "span:first-of-type": {
+    fontWeight: 700,
+    fontSize: "0.875rem",
+  },
+});
